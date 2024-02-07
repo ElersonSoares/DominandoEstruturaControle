@@ -10,42 +10,44 @@ let nameHero =  "Hero"
 9 - Se XP for entre 9.001 e 10.000= Imortal
 default - Se XP for maior ou igual a 10.001 = Radiante*/
 let option = (xpHero - (xpHero % 1000)) / 1000
+let nivel = ""
 
 switch(option){
     case 0:
-        console.log("Ferro")
+        nivel = "Ferro"
         break
     case 1:
-        console.log("Bronze")
+        nivel = "Bronze"
         break
     case 2:
-        console.log("Prata")
+        nivel = "Prata"
         break
     case 3:
-        console.log("Prata")
+        nivel = "Prata"
         break
     case 4:
-        console.log("Prata")
+        nivel = "Prata"
         break
     case 5:
-        console.log("Ouro")
+        nivel = "Ouro"
         break
     case 6:
-        console.log("Ouro")
+        nivel = "Ouro"
         break
     case 7:
-        console.log("Platina")
+        nivel = "Platina"
         break
     case 8:
-        console.log("Ascendente")
+        nivel = "Ascendente"
         break
     case 9:
-        console.log("Imortal")
+        nivel = "Imortal"
         break
     default:
-        console.log("Radiante")
+        nivel = "Radiante"
 }
 
+console.log("O Herói de nome %s está no nível de %s.", nameHero, nivel )
     
 
 
