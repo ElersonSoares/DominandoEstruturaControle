@@ -1,3 +1,5 @@
+/* Foi utilizado uma abordagem simples, porém sem comando de repetição, porém eu desconsiderei a regra de uso de um comando de repetição.
+
 let xpHero = 1500
 let nameHero =  "Hero"
 
@@ -9,7 +11,11 @@ let nameHero =  "Hero"
 8 - Se XP for entre 8.001 e 9.000 = Ascendente
 9 - Se XP for entre 9.001 e 10.000= Imortal
 default - Se XP for maior ou igual a 10.001 = Radiante*/
+
+// Formula para recuperar o valor inteiro da divisão do valor da xp por 1000.
 let option = (xpHero - (xpHero % 1000)) / 1000
+
+// Inicialização da variavel em branco
 let nivel = ""
 
 switch(option){
